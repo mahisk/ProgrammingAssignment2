@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   }
   # if Inverse is not solved then do the inverse and cache
   data <- x$get()
-  minv <- solve(data)
+  minv <- solve(data, ...)
   x$setinverse(minv)
   minv
 }
